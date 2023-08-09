@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+/* Media Queries */
+@media screen and (max-width: 400px) {
+  .profile-card {
+    transform: scale(0.7);
+  }
+}
+@media screen and (max-height: 500px) {
+  .profile-card {
+    transform: scale(0.7);
+  }
+}
+@media screen and (max-height: 330px) {
+  .profile-card {
+    transform: scale(0.5);
+  }
+}
+@media screen and (max-width: 260px) {
+  .profile-card {
+    transform: scale(0.5);
+  }
+  .resize {
+    transform: scale(0);
+  }
+} /* Media Queries */
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  background: #fff;
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36%;
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+  background-color: #4070f4;
+}
+
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #4070f4;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.image .profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+.text-data .name {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.text-data .job {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.profile-card .media-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* Icon Background Colors */
+#twitter-bg-color {
+  background-color: #1c9ceb;
+  transition: all 0.2s ease-in-out;
+}
+#twitter-bg-color:hover {
+  background-color: #017cc8;
+  transform: scale(1.1);
+}
+
+#instagram-bg-color {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  transition: all 0.2s ease-in-out;
+}
+#instagram-bg-color:hover {
+  background: linear-gradient(
+    45deg,
+    #ea7900 0%,
+    #ca3803 25%,
+    #d40827 50%,
+    #be014d 75%,
+    #a30070 100%
+  );
+  transform: scale(1.1);
+}
+
+#linked-bg-color {
+  background-color: #0173af;
+  transition: all 0.2s ease-in-out;
+}
+#linked-bg-color:hover {
+  background-color: #025a89;
+  transform: scale(1.1);
+}
+
+#github-bg-color {
+  background-color: #010409;
+  transition: all 0.2s ease-in-out;
+}
+#github-bg-color:hover {
+  background-color: #010409c1;
+  transform: scale(1.1);
+} /* Icon Background Colors */
+
+/* Media Buttons */
+.media-buttons .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  margin: 0 8px;
+  background-color: #4070f4;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
+.profile-card .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.buttons .btn {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  border-radius: 24px;
+  margin: 0 10px;
+  padding: 8px 24px;
+  background-color: #4070f4;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.buttons .btn:hover {
+  background-color: #0e4bf1;
+  transform: scale(1.03);
+}
+
+.profile-card .analytics {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.analytics .data {
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding: 0 20px;
+  border-right: 2px solid #e7e7e7;
+}
+
+.data i {
+  font-size: 18px;
+  margin-right: 6px;
+}
+.data:last-child {
+  border-right: none;
+}
