@@ -90,7 +90,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #333;
+  color: #000000;
 }
 
 .text-data .name {
@@ -116,7 +116,7 @@ body {
 }
 #twitter-bg-color:hover {
   background-color: #017cc8;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 #instagram-bg-color {
@@ -139,7 +139,7 @@ body {
     #be014d 75%,
     #a30070 100%
   );
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 #linked-bg-color {
@@ -148,7 +148,7 @@ body {
 }
 #linked-bg-color:hover {
   background-color: #025a89;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 #github-bg-color {
@@ -157,7 +157,7 @@ body {
 }
 #github-bg-color:hover {
   background-color: #010409c1;
-  transform: scale(1.1);
+  transform: scale(1.05);
 } /* Icon Background Colors */
 
 /* Media Buttons */
@@ -193,12 +193,11 @@ body {
   background-color: #4070f4;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .buttons .btn:hover {
   background-color: #0e4bf1;
-  transform: scale(1.03);
 }
 
 .profile-card .analytics {
